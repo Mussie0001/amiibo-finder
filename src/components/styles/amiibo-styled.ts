@@ -3,6 +3,7 @@ import styled from "styled-components";
 // reusable styled components for the app
 
 // Christian Rudder ---------------------------
+// Some may or may not be used in the final version of the project
 const Header = styled.h1`
   font-size: 4rem;
   font-weight: 800;

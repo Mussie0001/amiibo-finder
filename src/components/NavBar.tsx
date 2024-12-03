@@ -11,7 +11,6 @@ import styled from "styled-components";
 
 // Christian Rudder ---------------------------
 // Navigation bar
-import { Pill } from "./styles/amiibo-styled";
 import { Link } from "react-router-dom";
 
 const NavCard = styled.div`
@@ -36,7 +35,7 @@ const NavLink = styled(Link)`
   text-decoration: none;
   font-size: 1.5rem;
   width: 100%;
-  height: 45px;
+  height: 58px;
   text-decoration: none;
   display: flex;
   justify-content: center;
