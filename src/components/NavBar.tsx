@@ -15,39 +15,37 @@ import { Pill } from "./styles/amiibo-styled";
 import { Link } from "react-router-dom";
 
 const NavCard = styled.div`
-
-  background-color: white;
-  border-radius: 3rem;
-  padding: 0 1rem 1rem 2rem;
-  margin: 0 2rem; 0 2rem;
-  margin-top: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: black;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-
-  border: 2px solid black;
 `;
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 0.5rem;
   width: 100%;
+  padding: 0 2rem;
 `;
 
 const NavLink = styled(Link)`
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  margin: 0 1rem;
+  width: 100%;
+  height: 45px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     color: gray;
-    text-decoration: underline;
+    background-color: #3b82f6;
+    color: white;
   }
 `;
 
@@ -55,18 +53,10 @@ const NavBar = () => {
   return (
     <NavCard>
       <Nav>
-        <NavLink to="/">
-          <Pill>Home</Pill>
-        </NavLink>
-        <NavLink to="/list">
-          <Pill>Amiibo List</Pill>
-        </NavLink>
-        <NavLink to="/search">
-          <Pill>Search</Pill>
-        </NavLink>
-        <NavLink to="/about">
-          <Pill>About</Pill>
-        </NavLink>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/list">Amiibo List</NavLink>
+        <NavLink to="/search">Search</NavLink>
+        <NavLink to="/about">About</NavLink>
       </Nav>
     </NavCard>
   );
