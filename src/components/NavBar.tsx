@@ -27,7 +27,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 2rem;
 `;
 
 const NavLink = styled(Link)`
