@@ -11,14 +11,6 @@ const Header = styled.h1`
   font-family: "Comic Sans MS";
 `;
 
-const Bubble = styled.span`
-  color: #3b82f6;
-  background-color: white;
-  padding: 0.5rem 2rem;
-  border-radius: 8rem;
-  border: 2px solid black;
-`;
-
 const Card = styled.div`
   background-color: white;
   border-radius: 1rem;
@@ -58,24 +50,6 @@ const Button = styled.a<{ bgColor?: string; hoverColor?: string }>`
         background-color: ${({ hoverColor }) => hoverColor || "#2563eb"};
     }
 `;
-
-const Pill = styled.a`
-  background-color: #3b82f6;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 2rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background-color 0.2s;
-  font-family: "Comic Sans MS";
-
-  &:hover {
-    background-color: #2563eb;
-  }
-`;
 // Christian Rudder ---------------------------
 
-export { Header, Bubble, Card, Text, Button, Pill };
+export { Header, Card, Text, Button };

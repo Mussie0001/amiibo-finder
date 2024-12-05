@@ -15,11 +15,11 @@ import { Link } from "react-router-dom";
 
 const NavCard = styled.div`
   background-color: black;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  font-family: 'Comic Sans MS', cursive; 
 `;
 
 const Nav = styled.nav`
