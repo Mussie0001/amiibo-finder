@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-//Jood Alasiri
+// Jood Alasiri
 const PageWrapper = styled.div`
   display: flex;
-  
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -11,7 +10,11 @@ const PageWrapper = styled.div`
 
 const SlayCont = styled.div`
   max-width: 65%;
-  padding: 10%;
+  padding: 5%;
+  background-color: white; /* White box around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  border: 1px solid #e5e7eb; /* Subtle border for definition */
 `;
 
 const StyledHeader = styled.h1`
@@ -23,10 +26,8 @@ const StyledHeader = styled.h1`
   font-family: 'Comic Sans MS', sans-serif;
 
   span {
-    color: #3b82f6; //ask
+    color: #3b82f6;
   }
-  
-  
 `;
 
 const StyledParagraph = styled.p`
@@ -42,14 +43,9 @@ const StyledParagraph = styled.p`
 
 const StyledList = styled.ul`
   color: dimgrey; 
-  
-  
   font-family: 'Comic Sans MS', sans-serif;
   list-style-type: none;
-  
   padding: 0;
-  
-  
 
   li {
     margin-bottom: 2%; 
